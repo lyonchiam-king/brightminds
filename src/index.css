@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Merriweather", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --color-bg: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-text: #1F2937;
+  --color-muted: #6B7280;
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+  --color-accent-pressed: #1E40AF;
+  --color-card-border: #E5E7EB;
+
+  --radius-card: 8px;
+}
+
+@layer base {
+  :root {
+    --bg: #F9FAFB;
+    --surface: #FFFFFF;
+    --text: #1F2937;
+    --muted: #6B7280;
+    --accent: #2563EB;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar and utilities */
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
